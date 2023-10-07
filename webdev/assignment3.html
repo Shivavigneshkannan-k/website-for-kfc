@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC</title>
+    <style>
+        .logo{
+            color:red;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: 0.25rem;
+            font-size: 5em;
+        }
+        .head-part{display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        li>a{
+            text-decoration: none;
+            color:black;
+        }
+        ul{list-style-type: none;
+        display: flex;
+        gap:2rem;
+        justify-content: center;
+        align-items: center;
+        padding:1rem;
+    }
+    .display{
+        display: grid;
+        width:100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap:1rem;
+             
+    }
+    .display_menu{width:350px;
+    }
+    .mini-web{
+        width: 400px;
+        height:450px;}
+    .web{display: flex;
+    flex-flow: column;
+    font-size: 1.5rem;
+    font-weight: 900;}
+
+    section{
+        display:flex;
+        flex-flow:row;
+        flex:1;
+        gap:1rem;
+    }
+    section>img{padding-top:5rem;}
+
+    footer{padding:5rem;
+    padding-bottom:1rem;}
+
+    </style>
+</head>
+<body>
+    <div class="head-part">
+    <header>
+        <h1 class="logo">KFC</h1>
+    </header>
+    <nav>
+        <ul>
+        <li><a href="https://online.kfc.co.in/menu">Menu</a></li>
+        <li><a href="https://login.kfc.co.in/auth/realms/ki/protocol/openid-connect/auth?scope=openid+phone+profile+email&response_type=code&client_id=reg54y8ws34xvp9&redirect_uri=https://online.kfc.co.in/login&state=X9BEUW20azUzSWXSerYxSPx4VbAh-x7FoNcL60Vj3bk&code_challenge=9T3xWRsLiEd30NJCOKILCNWABmrgtz8hX00zIlraEvE&code_challenge_method=S256&platform=undefined&env=UAT">Sign in</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Account</a></li>
+        </ul>
+    </nav>
+    </div>
+    <main>
+        <div class="display">
+            <img class='display_menu' src="../img/briyani.jpg" alt="briyani image">
+            <img class='display_menu' src="../img/boxmeals.jpg" alt="box meals">
+            <img class='display_menu' src="../img/chickenroll.jpg" alt="chicken roll">
+            <img class='display_menu' src="../img/periperi.jpg" alt="peri peri chicken">
+            <img class='display_menu' src="../img/snakers.jpg" alt="snakers">
+            <img class='display_menu' src="../img/chickenbucket.jpg" alt="chicken bucket">
+        </div>
+        <section>
+        <div class="web">
+        <p>Checkout KFC official website 👇</p>
+        <iframe class="mini-web" src="https://online.kfc.co.in/" frameborder="2px"></iframe>
+        </div>
+        <img src="../img/Screenshot 2023-10-08 at 01-15-46 kfc chennai - Google Search.png" alt="kfc branch in chennai" width="750px" height="450px" >
+        </section>
+    </main>
+    <footer style="background-color: black ; color:white; text-align:center;">
+        <div sub_footer>
+            <p style="font-size: 1.5rem;">it is just a model website of KFC for education purpose only</p>
+
+
+        </div>
+        <br><br>
+        Copyright &copy; KFC Corporation 2023 All Rights Reserved
+    </footer>
+</body>
+</html>
